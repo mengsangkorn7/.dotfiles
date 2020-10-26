@@ -1,39 +1,34 @@
 set nocompatible  
-filetype off                  " required
+filetype off 
 
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-
-
-
-
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'gabrielelana/vim-markdown'
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+Plugin 'jiangmiao/auto-pairs'
+
+"Colors Scheme
+Plugin 'flazz/vim-colorschemes'
+
+call vundle#end()   
+filetype plugin indent on
 
 
-
-set syntax=on
-set number 
-set hlsearch
-set incsearch
-set showmatch
-set autoindent
-set expandtab
-set softtabstop=4
-set tabstop=4
-set laststatus=2
-set ruler
-
-nnoremap <CR>: noh <CR> <CR> 
-colorscheme desert
 syntax on
+set number
+set noswapfile
+set nowrap
+set incsearch showmatch
+set smartcase smartindent
+set expandtab
+set tabstop=4 softtabstop=4
+set laststatus=2
+set shiftwidth=4
 
 hi Comment ctermfg = gray
+nnoremap <CR>: noh <CR> <CR> 
+"set colorcolumn=80
+"let g:solarized_termcolors=256
+"set background=dark
+colorscheme desert
 
