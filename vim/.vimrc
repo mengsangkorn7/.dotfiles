@@ -30,5 +30,5 @@ nnoremap <CR>: noh <CR> <CR>
 "set colorcolumn=80
 "let g:solarized_termcolors=256
 "set background=dark
-colorscheme desert
+"colorscheme desert
 
