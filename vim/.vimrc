@@ -1,34 +1,50 @@
-set nocompatible  
-filetype off 
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'gabrielelana/vim-markdown'
-Plugin 'jiangmiao/auto-pairs'
-
-"Colors Scheme
-Plugin 'flazz/vim-colorschemes'
-
-call vundle#end()   
-filetype plugin indent on
-
-
 syntax on
+
+set splitbelow
+set splitright
 set number
 set noswapfile
 set nowrap
-set incsearch showmatch
+set incsearch
+set showmatch
+set ignorecase
 set smartcase smartindent
 set expandtab
-set tabstop=4 softtabstop=4
+set cmdheight=1
+set tabstop=4
+set softtabstop=4
 set laststatus=2
 set shiftwidth=4
 
-hi Comment ctermfg = gray
-nnoremap <CR>: noh <CR> <CR> 
-"set colorcolumn=80
-"let g:solarized_termcolors=256
-"set background=dark
-colorscheme desert
+map <silent> <leader><cr> :noh<cr>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+map 0 ^
 
+
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
+
+try
+    colorscheme desert
+catch
+endtry
+
+
+if has("gui_running")
+    set guioptions-=T
+    set guioptions-=e
+    set t_Co=256
+    set guitablabel=%M\ %t
+endif
+
+set encoding=utf8
+
+set ffs=unix,dos,mac
+
+set background=dark
+colors slate
+hi Comment ctermfg = green
