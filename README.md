@@ -1,1 +1,1 @@
-# my essential dotfiles
+# My essential dotfiles
