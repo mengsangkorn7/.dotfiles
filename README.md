@@ -1,1 +1,1 @@
-# My essential dotfiles
+# My essential dotfiles 🌏
