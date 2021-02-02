@@ -95,14 +95,12 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
 alias python="python3"
+alias here="open -a Terminal '`pwd`'"
 eval `opam config env`
 
 PROMPT='%F{226}%n%f%F{124}:%f %F{082}%1~%f %F{057}➤%f '
 
 export PATH="/usr/local/sbin:$PATH"
-
-
-
