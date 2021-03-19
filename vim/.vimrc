@@ -15,3 +15,7 @@ map gn :bn<cr>
 map gp :bp<cr>
 map gd :bd<cr>  
 highlight Comment ctermfg=green
+
+"show current editing file name in tmux windows
+autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
+
