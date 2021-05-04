@@ -2,6 +2,7 @@ syntax on
 filetype plugin on
 
 set number
+"set nowrap
 set shiftwidth=2
 set tabstop=2
 set ai 

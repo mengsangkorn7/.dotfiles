@@ -91,6 +91,8 @@ alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias python="python3"
 alias here="open -a Terminal '`pwd`' "
+alias time="/usr/bin/time -p"
+
 eval `opam config env`
 
 PROMPT='%F{226}%n%f%F{124}:%f %F{082}%1~%f %F{057}➤%f '
@@ -98,4 +100,4 @@ PROMPT='%F{226}%n%f%F{124}:%f %F{082}%1~%f %F{057}➤%f '
 export PATH="$PATH:./"
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 
-
+neofetch
