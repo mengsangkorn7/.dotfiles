@@ -1,0 +1,1 @@
+exec /usr/bin/X -ardelay 200 -arinterval 27 -nolisten tcp "$@"
