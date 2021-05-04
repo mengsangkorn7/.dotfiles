@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export ZSH="/Users/mengsangkorn/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
@@ -101,7 +100,6 @@ PROMPT='%F{226}%n%f%F{124}:%f %F{082}%1~%f %F{057}➤%f '
 export PATH="$PATH:./"
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 
-=======
 # Use powerline
 USE_POWERLINE="true"
 # Source manjaro-zsh-configuration
@@ -109,6 +107,5 @@ if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
   source /usr/share/zsh/manjaro-zsh-config
 fi
 
-PROMPT='%F{226}%n%f%F{124}:%f %F{082}%1~%f %F{057}➤%f '
->>>>>>> 4da7af85464d77f0360a4b134deb24c30aa5bd7e
+PROMPT='%F{226}%n%f%F{124}:%f %F{082}%~~%f %F{057}➤%f '
 neofetch
