@@ -108,4 +108,9 @@ if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
 fi
 
 PROMPT='%F{226}%n%f%F{124}:%f %F{082}%~~%f %F{057}➤%f '
-neofetch
+# neofetch
+
+# start TMUX at login
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   exec tmux
+# fi

@@ -1,8 +1,8 @@
 syntax on
 filetype plugin on
 
-set number
-"set nowrap
+set ruler
+set nowrap
 set shiftwidth=2
 set tabstop=2
 set ai 
@@ -17,6 +17,16 @@ map gp :bp<cr>
 map gd :bd<cr>  
 highlight Comment ctermfg=green
 
-"show current editing file name in tmux windows
+" handle text after column 80th
+highlight OverLength ctermbg=green ctermfg=black guibg=#592929
+match OverLength /\%81v.\+/
+
+" check spelling, no wrapping, no line number for markdown file 
+autocmd BufReadPost,BufNewFile *.md setlocal spell wrap nonumber 
+" no highlight color for markdown file at column 80th 
+autocmd BufReadPost,BufNewFile *.md call clearmatches()
+
+
+" show current editing file name in tmux windows
 autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
 
