@@ -5,8 +5,9 @@ set ruler
 set nowrap
 set shiftwidth=2
 set tabstop=2
+set number
 set ai 
-set si 
+" set smartindent 
 set background=dark
 set clipboard=unnamed
 set path+=**
@@ -18,8 +19,8 @@ map gd :bd<cr>
 highlight Comment ctermfg=green
 
 " handle text after column 80th
-highlight OverLength ctermbg=green ctermfg=black guibg=#592929
-match OverLength /\%81v.\+/
+" highlight OverLength ctermbg=green ctermfg=black guibg=#592929
+" match OverLength /\%81v.\+/
 
 " check spelling, no wrapping, no line number for markdown file 
 autocmd BufReadPost,BufNewFile *.md setlocal spell wrap nonumber 
