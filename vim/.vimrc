@@ -1,12 +1,14 @@
 syntax on
 filetype plugin on
 
+set tw=79
 set ruler
 set nowrap
 set shiftwidth=2
 set tabstop=2
-set number
+" set number
 set ai 
+
 " set smartindent 
 set background=dark
 set clipboard=unnamed
@@ -23,7 +25,7 @@ highlight Comment ctermfg=green
 " match OverLength /\%81v.\+/
 
 " check spelling, no wrapping, no line number for markdown file 
-autocmd BufReadPost,BufNewFile *.md setlocal spell wrap nonumber 
+" autocmd BufReadPost,BufNewFile *.md setlocal spell wrap nonumber 
 " no highlight color for markdown file at column 80th 
 autocmd BufReadPost,BufNewFile *.md call clearmatches()
 
